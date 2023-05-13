@@ -1,0 +1,19 @@
+.botaoSubmit {
+    background-color: var(--azul);
+    border: none;
+    outline: none;
+    width: 165px;
+    height: 56px;
+    color: var(--cor-da-fonte);
+    font-size: 1rem;
+    margin-top: .5rem;
+    transition: all 400ms ease-in-out;
+    cursor: pointer;
+    font-weight: 700;
+}
+
+.botaoSubmit:hover {
+    border: 2px solid var(--azul);
+    color: var(--azul);
+    background-color: var(--cor-da-fonte);
+}

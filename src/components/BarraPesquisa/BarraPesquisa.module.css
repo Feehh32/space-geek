@@ -1,0 +1,60 @@
+.container {
+   width: 100%;
+   text-align: center;
+}
+
+.search {
+    background-color:rgba(53, 50, 56, 0.5);
+    border-radius: 20px;
+    padding: 8px 16px;
+    gap: 8px;
+    border: none;
+    outline: none;
+    color: var(--cor-da-fonte);
+    font-family: var(--fonte-principal);
+    font-size: 14px;
+    width: 100%;
+    position: relative;
+}
+
+.icon {
+    color:rgb(162, 162, 162,.3);
+    position: absolute;
+    left: 85%;
+    top: 14%;
+}
+
+@media screen and (min-width: 1024px){
+    .container{
+        position: absolute;
+        width: 400px;
+        left: 20%;
+    }
+
+    .search {
+        padding: 12px 16px;
+    }
+
+    .icon {
+        left:87%;
+        top: 22%;
+    }
+}
+
+@media screen and (min-width: 1440px){
+    .container{
+        width: 400px;
+        left: 30%;
+    }
+
+    .search {
+        padding: 16px;
+    }
+
+    .icon {
+        left: 90%;
+        top: 32%;
+        font-size: 16px;
+    }
+
+}

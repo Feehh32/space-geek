@@ -1,0 +1,39 @@
+.container {
+    display: flex;
+    flex-direction: column;
+}
+
+.containerCabecalho {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 4rem 0 1rem 0;
+}
+
+.containerCabecalho h3 {
+    font-size: 2rem;
+    color: #dede10ed;
+}
+
+.containerLink {
+    display: flex;
+    text-decoration: none;
+    color: var(--azul);
+    align-items: center;
+    gap: 4px;
+    font-weight: 700;
+}
+
+.containerProduto {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 1rem;
+}
+
+@media screen and (min-width: 1024px) {
+    .containerProduto {
+        display: flex;
+        justify-content: space-between;
+    }
+}

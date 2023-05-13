@@ -1,0 +1,8 @@
+li {
+    list-style-type: none;
+}
+
+.listaItem {
+    text-decoration: none;
+    color: var(--cor-da-fonte);
+}

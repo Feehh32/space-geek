@@ -1,0 +1,15 @@
+.sessoes {
+    padding: 1rem;
+}
+
+@media screen and (min-width: 1024px) {
+    .sessoes {
+        padding: 2rem 8rem;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .sessoes {
+        padding: 4rem 9.5rem;
+    }
+}
