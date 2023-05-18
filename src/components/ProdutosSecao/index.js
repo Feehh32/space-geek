@@ -38,6 +38,7 @@ function ProdutosSecao({ titulo, url, nomeSessao }) {
                                 nomeProduto={produto.nome}
                                 key={produto.id}
                                 preco={produto.preco.toFixed(2).replace(/\./g, ',')}
+                                url={`/${produto.id}`}
                             />
                         ))
                     :
@@ -49,6 +50,7 @@ function ProdutosSecao({ titulo, url, nomeSessao }) {
                                 nomeProduto={produto.nome}
                                 key={produto.id}
                                 preco={produto.preco.toFixed(2).replace(/\./g, ',')}
+                                url={`/${produto.id}`}
                             />
                         ))
                 }

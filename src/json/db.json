@@ -65,7 +65,7 @@
     {
         "id": 9,
         "imagem": "/images/mini-darth-vader.png",
-        "nome": "Darth Vader(miniatura)",
+        "nome": "Darth Vader (miniatura)",
         "preco": 60.00,
         "secao": "starWars"
 

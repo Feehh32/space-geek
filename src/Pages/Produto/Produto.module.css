@@ -1,0 +1,130 @@
+.container {
+    background-color: #201433;
+}
+
+.produto {
+    padding: 1rem 0;
+}
+
+.containerImagem {
+    width: 100%;
+    height: 240px;
+    overflow: hidden;
+    box-shadow: 3px 6px 16px #100a19;
+}
+
+.imagemProduto {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.produtoInfo {
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+}
+
+.produtoInfo h2 {
+    color: var(--cor-do-subtitulo);
+    font-weight: 400;
+    font-size: 1.375rem;
+}
+
+.produtoInfo .precoProduto {
+    font-weight: 700;
+    font-size: 1rem;
+}
+
+.produtoInfo .descricao {
+    line-height: 18px;
+    font-size: 0.875rem;
+}
+
+/* Referente a seção de similares */
+
+.containerSimilares {
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.containerSimilares .similaresTitulo {
+    color: var(--cor-do-subtitulo);
+    font-size: 1.375rem;
+    font-weight: 700;
+    padding-bottom: 1rem;
+}
+
+.similares {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    /* justify-content: center; */
+}
+
+@media screen and (min-width: 1024px) {
+    .produto {
+        display: grid;
+        grid-template-columns: 35% 65%;
+        padding: 2rem 2.5rem;
+        column-gap: 1rem;
+    }
+
+    .containerImagem {
+        height: 175px;
+    }
+
+    .produtoInfo {
+        position: relative;
+        display: flex;
+        padding: 0 2rem;
+        height: fit-content;
+    }
+
+    .produtoInfo::before {
+        position: absolute;
+        left: 0;
+        height: 100%;
+        content: '';
+        display: block;
+        width: 4px;
+        background-color: var(--cor-do-subtitulo);
+        margin-left: 1rem;
+    }
+
+    .containerSimilares {
+        padding: 2rem 8.5rem;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .similares {
+       justify-content: space-between;
+       width: 100%;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .produto {
+        padding: 4rem 9.5rem 2rem 9.5rem; 
+        align-items: center;
+    }
+
+    .containerImagem {
+        height: 380px;
+    }
+
+    .produtoInfo h2 {
+        font-size: 3.25rem;
+        font-weight: 500;
+    }
+
+    .containerSimilares{
+        padding: 2rem 9.5rem;
+    }
+
+}

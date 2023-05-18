@@ -12,7 +12,7 @@
 
 .containerCabecalho h3 {
     font-size: 2rem;
-    color: #dede10ed;
+    color: var(--cor-do-subtitulo);
 }
 
 .containerLink {

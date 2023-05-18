@@ -21,7 +21,7 @@
     color:rgb(162, 162, 162,.3);
     position: absolute;
     left: 85%;
-    top: 14%;
+    top: 12%;
 }
 
 @media screen and (min-width: 1024px){
@@ -36,8 +36,8 @@
     }
 
     .icon {
-        left:87%;
-        top: 22%;
+        left:90%;
+        top: 30%;
     }
 }
 

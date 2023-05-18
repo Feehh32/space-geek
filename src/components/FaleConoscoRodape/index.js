@@ -2,6 +2,7 @@ import BotaoSubmit from 'components/BotaoSubmit';
 import styles from './FaleConosRodape.module.css';
 
 import { useState } from 'react';
+import InputGeral from 'components/InputGeral';
 
 function FaleConosRodape() {
     const [mensagem, setMensagem] = useState('');
@@ -11,23 +12,22 @@ function FaleConosRodape() {
         event.preventDefault();
 
         setMensagem('');
+        setNome('');
     }
     return (
         <form onSubmit={handleSubmit}>
             <fieldset className={styles.formContainer}>
                 <legend>Fale Conosco</legend>
-                <div className={styles.inputContainer}>
-                    <input
-                        type="text"
-                        className={styles.formName}
-                        id="name"
-                        value={nome}
-                        onChange={(event) => setNome(event.target.value)}
-                        placeholder="Digite seu nome"
-                        required="required"
-                        />
-                    <label htmlFor="name" className={styles.labelName} >Nome</label>
-                </div>
+                <InputGeral
+                    heigth={56}
+                    placeholder="Escreva seu nome"
+                    id="nome"
+                    htmlFor="nome"
+                    labelContent="Nome"
+                    type="text"
+                    value={nome}
+                    onChange={event => event.target.value}
+                />
                 <div className={styles.textareaContainer}>
                     <textarea
                         id="mensagem"
@@ -35,6 +35,7 @@ function FaleConosRodape() {
                         className={styles.formMessage}
                         placeholder="Escreva sua mensagem"
                         onChange={(event) => setMensagem(event.target.value)}
+
                     />
                 </div>
                 <BotaoSubmit type='submit' content='Enviar mensagem' />
