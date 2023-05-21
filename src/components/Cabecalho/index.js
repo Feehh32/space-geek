@@ -9,8 +9,17 @@ function Cabecalho() {
 	const mdScreen = window.innerWidth < 1024;
 	const location = useLocation();
 	const parametros = useParams();
-	
-	const isLoginPage = location.pathname === '/login' || location.pathname === `/${parametros.id}`
+	let customizedText = 'Login';
+	let customizedUrl = '/login';
+
+	const isLoginPage = location.pathname === '/login' ||
+		location.pathname === `/${parametros.id}` ||
+		location.pathname === '/todos_os_produtos';
+
+	if (location.pathname === '/adicionar_produto') {
+		customizedText = 'Menu administrador';
+		customizedUrl = '/todos_os_produtos';
+	}
 
 	return (
 		<header className={styles.cabecalho}>
@@ -21,7 +30,7 @@ function Cabecalho() {
 
 					{!isLoginPage ?
 						<>
-							<Botao url="/login" text="Login" className="transparent" />
+							<Botao url={customizedUrl} text={customizedText} className="transparent" />
 							<BarraPesquisa placeholder="O que deseja encontrar?" />
 						</>
 						:
@@ -35,7 +44,7 @@ function Cabecalho() {
 					{!isLoginPage ?
 						<>
 							<BarraPesquisa placeholder="O que deseja encontrar?" />
-							<Botao url="/login" text="Login" className="transparent" />
+							<Botao url={customizedUrl} text={customizedText} className="transparent" />
 						</>
 						:
 						<>

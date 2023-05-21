@@ -2,7 +2,7 @@
 	position: relative;
 	display: flex;
 	flex-direction: column;
-	padding-bottom: 1rem;
+	width: 100%;
 }
 
 .InputGeral {
@@ -31,7 +31,7 @@
 
 .labelName {
 	position: absolute;
-	top: 38%;
+	top: 50%;
 	transform: translateY(-50%);
 	color: rgb(98, 95, 95);
 	left: 1rem;
@@ -43,6 +43,6 @@
 
 .InputGeral:focus + .labelName, 
 .InputGeral:not(:placeholder-shown) + .labelName {
-	top: 15%;
+	top: 18%;
 	font-size: 12px;
 }

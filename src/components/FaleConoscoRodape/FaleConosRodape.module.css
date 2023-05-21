@@ -4,11 +4,6 @@
 	width: 100%;
 	display: flex;
 	flex-direction: column;
-	gap: 1rem;
-}
-
-.formContainer:last-child{
-	gap: 0;
 }
 
 .formContainer legend {
@@ -17,25 +12,20 @@
 	padding-bottom: .5rem;
 }
 
-.textareaContainer {
+.textContainer,
+.inputContainer {
+	display: flex;
 	width: 100%;
-	margin-bottom: .5rem;
+}
+
+.inputContainer {
+	padding-bottom: 1rem;
+}
+
+.textContainer{
+	padding-bottom: .5rem;
 }
 
 
-.formMessage {
-	width: 328px;
-	height: 82px;
-	resize: none;
-	outline: none;
-	padding: 1rem;
-	border-radius: 4px;
-	box-shadow: 3px 3px 6px #0c0213;
-	font-size: 1rem;
-}
 
-@media screen and (min-width: 1024px) {
-	.formMessage {
-		width: 560px;
-	}
-}
+

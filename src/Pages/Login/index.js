@@ -1,7 +1,8 @@
 import InputGeral from 'components/InputGeral';
 import styles from './Login.module.css';
 
-import React, { useState } from 'react'
+import { useState } from 'react'
+import { useNavigate } from 'react-router-dom';
 import BotaoSubmit from 'components/BotaoSubmit';
 
 const screenSize = window.innerWidth;
@@ -9,6 +10,12 @@ const screenSize = window.innerWidth;
 function Login() {
     const [email, setEmail] = useState('');
     const [senha, setSenha] = useState('');
+    const navigate = useNavigate();
+    
+
+    const loginAcepted = () => {
+        navigate('/todos_os_produtos');
+    }
 
     const handleSubmit = (event) => {
         event.preventDefault();
@@ -48,7 +55,11 @@ function Login() {
                             onChange={event => event.target.value}
                         />
                     </div>
-                    <BotaoSubmit content="Entrar" style={screenSize > 1080 ? { width: "100%" } : { width: "none" }} />
+                    <BotaoSubmit
+                        content="Entrar"
+                        style={screenSize > 1080 ? { width: "100%" } : { width: "none" }}
+                        onClick={loginAcepted}
+                    />
                 </fieldset>
             </form>
         </main>
