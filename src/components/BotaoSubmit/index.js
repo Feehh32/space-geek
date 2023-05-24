@@ -4,7 +4,7 @@ import React from 'react'
 
 function BotaoSubmit({type = "submit", content, style, onClick}) {
   return (
-    <button type={type}className={styles.botaoSubmit} style={style} onClick={onClick}>{content}</button>
+    <button type={type} className={styles.botaoSubmit} style={style} onClick={onClick}>{content}</button>
   )
 }
 

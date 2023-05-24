@@ -1,10 +1,11 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import styles from './TodosOsProdutos.module.css'
 import Botao from 'components/Botao';
-import produtos from 'json/db.json';
 import CardProduto from 'components/CardProduto';
+import { ProdutosContext } from 'contextos/Produtos';
 
 function TodosOsProdutos() {
+    const {produtos} = useContext(ProdutosContext);
     return (
         <main className={styles.container}>
             <div className={styles.containerCabecalho}>

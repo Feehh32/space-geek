@@ -1,17 +1,15 @@
-import Botao from 'components/Botao';
-import React from 'react';
 import styles from './Banner.module.css';
 import bannerImagem from './banner-imagem.png';
+import BotaoSubmit from 'components/BotaoSubmit';
 
-function Banner() {
-
+function Banner({handleClick}) {
     return (
         <div className={styles.banner}>
             <img src={bannerImagem} alt="ta aqui " className={styles.bannerImagem} />
             <div className={styles.bannerInfo}>
                 <h2>Dezembro Promocional</h2>
                 <p>Produtos selecionados com 33% de desconto</p>
-                <Botao text='Ver Consoles' className="colorfull" />
+                <BotaoSubmit type='text' content='Ver Consoles' onClick={handleClick}/>
             </div>
         </div>
     )

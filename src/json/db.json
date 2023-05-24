@@ -1,146 +1,130 @@
-[
-    {
-        "id": 1,
-        "imagem": "/images/baby-yoda.png",
-        "nome": "Baby Yoda",
-        "preco": 60.00,
-        "secao":  "starWars"
-    },
-    {
-        "id": 2,
-        "imagem": "/images/action-figure-sonic.png",
-        "nome": "Action figure Sonic",
-        "preco": 60.00,
-        "secao": "diversos"
-    },
-    {
-        "id": 3,
-        "imagem": "/images/camiseta-controle-retro.png",
-        "nome": "Camiseta SNES",
-        "preco": 60.00,
-        "secao": "diversos"
-
-    },
-    {
-        "id": 4,
-        "imagem": "/images/cara-de-capuz-do-imperio.png",
-        "nome": "Darth Sidious",
-        "preco": 60.00,
-        "secao": "starWars"
-
-    },
-    {
-        "id": 5,
-        "imagem": "/images/controle-switch.png",
-        "nome": "Controle Nintendo Switch",
-        "preco": 60.00,
-        "secao": "consoles"
-
-    },
-    {
-        "id": 6,
-        "imagem": "/images/despertador-rosa.png",
-        "nome": "Radio relógio retro (rosa)",
-        "preco": 60.00,
-        "secao": "diversos"
-
-    },
-    {
-        "id": 7,
-        "imagem": "/images/game-boy.png",
-        "nome": "Nintendo Game-boy",
-        "preco": 60.00,
-        "secao": "consoles"
-
-
-    },
-    {
-        "id": 8,
-        "imagem": "/images/mestre-yoda.png",
-        "nome": "Mestre Yoda",
-        "preco": 60.00,
-        "secao": "starWars"
-
-    },
-    {
-        "id": 9,
-        "imagem": "/images/mini-darth-vader.png",
-        "nome": "Darth Vader (miniatura)",
-        "preco": 60.00,
-        "secao": "starWars"
-
-    },
-    {
-        "id": 10,
-        "imagem": "/images/oculos-vr.png",
-        "nome": "Oculos VR",
-        "preco": 60.00,
-        "secao": "diversos"
-
-    },
-    {
-        "id": 11,
-        "imagem": "/images/pikachu-pelucia.png",
-        "nome": "Urso de pelúcia Pikachu",
-        "preco": 60.00,
-        "secao": "diversos"
-
-    },
-    {
-        "id": 12,
-        "imagem": "/images/playstation-5.png",
-        "nome": "Playstation 5",
-        "preco": 60.00,
-        "secao": "consoles"
-
-    },
-    {
-        "id": 13,
-        "imagem": "/images/stormtrooper-corpo.png",
-        "nome": "Stormtrooper",
-        "preco": 60.00,
-        "secao": "starWars"
-
-    },
-    {
-        "id": 14,
-        "imagem": "/images/stormtropper-cabeca.png",
-        "nome": "Stormtrooper (cabeça)",
-        "preco": 60.00,
-        "secao": "starWars"
-
-    },
-    {
-        "id": 15,
-        "imagem": "/images/super-nintendo-famicon.png",
-        "nome": "Super Nintendo Famicon",
-        "preco": 60.00,
-        "secao": "consoles"
-
-    },
-    {
-        "id": 16,
-        "imagem": "/images/toalha-atari.png",
-        "nome": "Toalha Atari",
-        "preco": 60.00,
-        "secao": "diversos"
-
-    },
-    {
-        "id": 17,
-        "imagem": "/images/xbox-controle.png",
-        "nome": "Controle Xbox Series X/S",
-        "preco": 60.00,
-        "secao": "consoles"
-
-    },
-    {
-        "id": 18,
-        "imagem": "/images/xbox-series-x.png",
-        "nome": "Xbox Series X",
-        "preco": 60.00,
-        "secao": "consoles"
-
-    }
-
-]
+{
+    "produtos": [
+        {
+            "id": 1,
+            "imagem": "/images/baby-yoda.png",
+            "nome": "Baby Yoda",
+            "preco": 60.00,
+            "secao": "starWars"
+        },
+        {
+            "id": 2,
+            "imagem": "/images/action-figure-sonic.png",
+            "nome": "Action figure Sonic",
+            "preco": 60.00,
+            "secao": "diversos"
+        },
+        {
+            "id": 3,
+            "imagem": "/images/camiseta-controle-retro.png",
+            "nome": "Camiseta SNES",
+            "preco": 60.00,
+            "secao": "diversos"
+        },
+        {
+            "id": 4,
+            "imagem": "/images/cara-de-capuz-do-imperio.png",
+            "nome": "Darth Sidious",
+            "preco": 60.00,
+            "secao": "starWars"
+        },
+        {
+            "id": 5,
+            "imagem": "/images/controle-switch.png",
+            "nome": "Controle Nintendo Switch",
+            "preco": 60.00,
+            "secao": "consoles"
+        },
+        {
+            "id": 6,
+            "imagem": "/images/despertador-rosa.png",
+            "nome": "Radio relógio retro (rosa)",
+            "preco": 60.00,
+            "secao": "diversos"
+        },
+        {
+            "id": 7,
+            "imagem": "/images/game-boy.png",
+            "nome": "Nintendo Game-boy",
+            "preco": 60.00,
+            "secao": "consoles"
+        },
+        {
+            "id": 8,
+            "imagem": "/images/mestre-yoda.png",
+            "nome": "Mestre Yoda",
+            "preco": 60.00,
+            "secao": "starWars"
+        },
+        {
+            "id": 9,
+            "imagem": "/images/mini-darth-vader.png",
+            "nome": "Darth Vader (miniatura)",
+            "preco": 60.00,
+            "secao": "starWars"
+        },
+        {
+            "id": 10,
+            "imagem": "/images/oculos-vr.png",
+            "nome": "Oculos VR",
+            "preco": 60.00,
+            "secao": "diversos"
+        },
+        {
+            "id": 11,
+            "imagem": "/images/pikachu-pelucia.png",
+            "nome": "Urso de pelúcia Pikachu",
+            "preco": 60.00,
+            "secao": "diversos"
+        },
+        {
+            "id": 12,
+            "imagem": "/images/playstation-5.png",
+            "nome": "Playstation 5",
+            "preco": 60.00,
+            "secao": "consoles"
+        },
+        {
+            "id": 13,
+            "imagem": "/images/stormtrooper-corpo.png",
+            "nome": "Stormtrooper",
+            "preco": 60.00,
+            "secao": "starWars"
+        },
+        {
+            "id": 14,
+            "imagem": "/images/stormtropper-cabeca.png",
+            "nome": "Stormtrooper (cabeça)",
+            "preco": 60.00,
+            "secao": "starWars"
+        },
+        {
+            "id": 15,
+            "imagem": "/images/super-nintendo-famicon.png",
+            "nome": "Super Nintendo Famicon",
+            "preco": 60.00,
+            "secao": "consoles"
+        },
+        {
+            "id": 16,
+            "imagem": "/images/toalha-atari.png",
+            "nome": "Toalha Atari",
+            "preco": 60.00,
+            "secao": "diversos"
+        },
+        {
+            "id": 17,
+            "imagem": "/images/xbox-controle.png",
+            "nome": "Controle Xbox Series X/S",
+            "preco": 60.00,
+            "secao": "consoles"
+        },
+        {
+            "id": 18,
+            "imagem": "/images/xbox-series-x.png",
+            "nome": "Xbox Series X",
+            "preco": 60.00,
+            "secao": "consoles"
+        }
+    ]
+}

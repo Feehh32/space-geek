@@ -1,10 +1,12 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import styles from './Produto.module.css';
 import produtos from 'json/db.json'
 import { useParams } from 'react-router-dom';
 import CardProduto from 'components/CardProduto';
+import { ProdutosContext } from 'contextos/Produtos';
 
 function Produto() {
+    const {produtos} = useContext(ProdutosContext);
     const screenSize = window.innerWidth;
     const parametros = useParams();
     const produto = produtos.find((produto) => {

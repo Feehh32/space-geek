@@ -1,27 +1,28 @@
 import styles from './ProdutosSecao.module.css';
 import { Link } from 'react-router-dom';
 import { FaArrowRight } from 'react-icons/fa';
-import produtos from "json/db.json";
-import React from 'react'
 import CardProduto from 'components/CardProduto';
-import { useEffect, useState } from 'react';
+import { forwardRef, useContext, useEffect, useState } from 'react';
+import { ProdutosContext } from 'contextos/Produtos';
 
-function ProdutosSecao({ titulo, url, nomeSessao }) {
+function ProdutosSecao({ titulo, url, nomeSessao }, ref) {
     const [sizeScreen, setSizeScreen] = useState(window.innerWidth);
+    const {produtos} = useContext(ProdutosContext);
 
     useEffect(() => {
+
         const handleResize = () => {
             setSizeScreen(window.innerWidth);
         }
 
         window.addEventListener('resize', handleResize);
 
-        return () => window.removeEventListener('resize', handleResize)
+        return () => window.removeEventListener('resize', handleResize);
 
     }, []);
 
     return (
-        <section className={styles.container}>
+        <section className={styles.container} ref={ref}>
             <div className={styles.containerCabecalho}>
                 <h3>{titulo}</h3>
                 <Link to={url} className={styles.containerLink}>
@@ -57,6 +58,6 @@ function ProdutosSecao({ titulo, url, nomeSessao }) {
             </div>
         </section>
     )
-}
+};
 
-export default ProdutosSecao;
+export default forwardRef(ProdutosSecao);
