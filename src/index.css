@@ -11,6 +11,8 @@
     --fonte-principal:'Raleway', sans-serif;
     --fonte-logo:'Bangers', cursive;
     --cor-do-subtitulo: #dede10ed;
+    --fundo-rodape: rgb(108, 79, 155, 0.3);
+    --msg-erro: #f53131;
 }
 
 body {

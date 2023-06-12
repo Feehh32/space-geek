@@ -12,7 +12,7 @@
 }
 
 .botaoSubmit:hover {
-    border: 2px solid var(--azul);
+    border: 3px solid var(--azul);
     color: var(--azul);
     background-color: var(--cor-da-fonte);
 }

@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import { GiRingedPlanet } from "react-icons/gi"
 import styles from './Logo.module.css'
 
-function Logo() {
+function Logo({disabled}) {
     return (
             <Link to="/" className={styles.logo}>
                 <GiRingedPlanet color="var(--azul)" className={styles.icon} />

@@ -33,12 +33,13 @@ function ProdutosSecao({ titulo, url, nomeSessao }, ref) {
             <div className={styles.containerProduto}>
                 {sizeScreen > 1080 ?
                     produtos.filter((produto) => produto.secao === nomeSessao)
+                        .slice(0 , 6)
                         .map((produto) => (
                             <CardProduto
                                 imagem={produto.imagem}
                                 nomeProduto={produto.nome}
                                 key={produto.id}
-                                preco={produto.preco.toFixed(2).replace(/\./g, ',')}
+                                preco={produto.preco}
                                 url={`/${produto.id}`}
                             />
                         ))
@@ -50,7 +51,7 @@ function ProdutosSecao({ titulo, url, nomeSessao }, ref) {
                                 imagem={produto.imagem}
                                 nomeProduto={produto.nome}
                                 key={produto.id}
-                                preco={produto.preco.toFixed(2).replace(/\./g, ',')}
+                                preco={produto.preco}
                                 url={`/${produto.id}`}
                             />
                         ))

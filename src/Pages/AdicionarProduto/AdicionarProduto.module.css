@@ -2,10 +2,77 @@
     padding: 1rem;
 }
 
+.containerMessage {
+    padding: 1rem 0;
+    text-align: center;
+    width: 100%;
+    border: 3px solid #198819;
+    margin-bottom: 1rem;
+    border-radius: 5px;
+    background-color: #b5e7b5;
+}
+
+.msgConfirmed {
+    font-weight: 700;
+    color: #198819;
+}
+
 .container fieldset {
     border: none;
     display: flex;
     flex-direction: column;
+}
+
+fieldset div:first-of-type{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.labelImagem {
+    color: #625f5f;
+    font-size: 12px;
+    position: absolute;
+    margin-left: 1rem;
+}
+
+.inputImagem {
+    padding: 1rem;
+    width: 100%;
+    background-color: var(--cor-da-fonte);
+    color: #000000;
+    font-size: 1rem;
+    border-radius: 5px;
+    box-shadow: 3px 3px 5px #0c0213;
+    cursor: pointer;
+}
+
+.categoriaLabel {
+    color: #625f5f;
+    position: absolute;
+    padding-left: 1rem;
+    transform: translateY(-50%);
+    transition: top 200ms ease-in-out;
+}
+
+.hasNoValue {
+    top: 50%;
+}
+
+.hasValue {
+    top: 20%;
+    font-size: 12px;
+}
+
+.categoriaSelect {
+    width: 100%;
+    padding: 1rem;
+    cursor: pointer;
+    outline: none;
+    border-radius: 5px;
+    box-shadow: 3px 3px 5px #0c0213;
+    font-size: 1rem;
+    appearance: none;
 }
 
 .container legend {
@@ -19,6 +86,11 @@
     padding-bottom: 1rem;
 }
 
+.msgError {
+    color: red;
+    padding-top: .3rem;
+}
+
 @media screen and (min-width: 1024px) {
     .container {
         padding: 2rem 8rem;
@@ -29,4 +101,5 @@
     .container {
         padding: 2rem 27.531rem;
     }
+
 }

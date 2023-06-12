@@ -1,20 +1,24 @@
 import React, { useContext } from 'react';
 import styles from './Produto.module.css';
-import produtos from 'json/db.json'
 import { useParams } from 'react-router-dom';
 import CardProduto from 'components/CardProduto';
 import { ProdutosContext } from 'contextos/Produtos';
+import NaoEncontrado from 'Pages/NaoEncontrado';
 
 function Produto() {
     const {produtos} = useContext(ProdutosContext);
     const screenSize = window.innerWidth;
     const parametros = useParams();
     const produto = produtos.find((produto) => {
-        return produto.id === Number(parametros.id);
+        return produto.id === Number(parametros.id) || produto.id === String(parametros.id);
     })
 
+    if(!produto) {
+        return <NaoEncontrado />
+    }
+
     let produtosSimilares = produtos
-        .filter((produto) => produto.id !== Number(parametros.id))
+        .filter((produto) => produto.id !== Number(parametros.id)) || produto.id !== String(parametros.id)
         .sort((a, b) => b.id - a.id);
 
     screenSize < 1080 ? produtosSimilares = produtosSimilares.slice(0, 4) : produtosSimilares = produtosSimilares.slice(0, 6);
@@ -27,10 +31,8 @@ function Produto() {
                 </div>
                 <div className={styles.produtoInfo}>
                     <h2>{produto.nome}</h2>
-                    <p className={styles.precoProduto}>{`R$ ${produto.preco.toFixed(2)}`}</p>
-                    <p className={styles.descricaos}>
-                        Voluptas voluptatum quibusdam similique, class debitis alias maecenas eveniet ridiculus, facilis fusce! Ullam conubia? Sociis, minima malesuada habitasse distinctio sequi aliqua malesuada. Quisque deleniti proin expedita, aliquid litora. Iste recusandae? Commodo, quia ridiculus doloribus vero dictum? Penatibus donec placeat faucibus, dolorum do. Animi porta anim magnam
-                    </p>
+                    <p>{`R$ ${produto.preco.toLocaleString('pt-BR', { minimumFractionDigits: 2, maximumFractionDigits: 2 })}`}</p>
+                    <p className={styles.descricaos}>{produto.descricao}</p>
                 </div>
             </section>
             <section className={styles.containerSimilares}>

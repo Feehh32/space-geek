@@ -17,11 +17,16 @@
     width: 100%;
 }
 
+.search::-webkit-search-cancel-button {
+    display: none;
+}
+
 .icon {
     color:rgb(162, 162, 162,.3);
     position: absolute;
-    left: 85%;
+    left: 90%;
     top: 25%;
+    cursor: pointer;
 }
 
 @media screen and (min-width: 1024px){
@@ -52,7 +57,7 @@
     }
 
     .icon {
-        left: 90%;
+        left: 85%;
         top: 32%;
         font-size: 16px;
     }

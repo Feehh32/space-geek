@@ -6,6 +6,14 @@
 	flex-direction: column;
 }
 
+.mensagemEnviada{
+	color: var(--azul);
+	border: 2px solid var(--azul);
+	padding: .5rem;
+	margin-bottom: 1rem;
+	border-radius: 5px;
+}
+
 .formContainer legend {
 	color: var(--cor-do-subtitulo);
 	font-weight: 700;
@@ -16,6 +24,7 @@
 .inputContainer {
 	display: flex;
 	width: 100%;
+	flex-direction: column;
 }
 
 .inputContainer {
@@ -24,6 +33,11 @@
 
 .textContainer{
 	padding-bottom: .5rem;
+}
+
+.msgError {
+	color: var(--msg-erro);
+	padding-top: .5rem;
 }
 
 

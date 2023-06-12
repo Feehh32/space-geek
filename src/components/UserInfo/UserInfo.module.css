@@ -1,0 +1,57 @@
+.container {
+    position: relative;
+}
+
+.container div {
+    display: flex;
+    overflow: hidden;
+    display: flex;
+    gap: .5rem;
+    align-items: center;
+    width: 100px;
+    padding-right: 1rem;
+}
+
+.containerMenu {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    top: 110%;
+    width:100px;
+    gap: 1px;
+    transition: all 300ms ease-in-out;
+    overflow: hidden;
+    border-radius: 5px;
+    
+}
+
+.iconUser {
+   font-size: 1.5rem;
+   color: var(--azul);
+   cursor: pointer;
+}
+
+.menuItem {
+    z-index: 1;
+    border: 2px solid transparent;
+    padding: 5px;
+    background-color: rgb(108, 79, 155, 0.7);
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.linkSair {
+    text-decoration: none;
+    color: var(--cor-da-fonte);
+}
+
+.container p {
+    font-size: 12px;
+    letter-spacing: 2px;
+}
+
+@media screen and (min-width: 1024px) {
+    .container div {
+        width: fit-content;
+    }
+}

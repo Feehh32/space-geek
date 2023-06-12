@@ -1,17 +1,19 @@
+import { forwardRef } from 'react';
 import styles from './Textarea.module.css';
-import React from 'react'
 
-function Textarea({value, id, placeholder, onChange}) {
+function Textarea({ id, placeholder, onChange, value, name }, ref) {
     return (
         <textarea
+            ref={ref}
             id={id}
-            value={value}
             className={styles.textarea}
             placeholder={placeholder}
             onChange={onChange}
+            value={value}
+            name={name}
         />
     )
 }
 
-export default Textarea;
+export default forwardRef(Textarea);
 

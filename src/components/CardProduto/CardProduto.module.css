@@ -19,6 +19,7 @@
 }
 
 .ContainerInfo {
+    flex-direction: column;
     line-height: 28px;
     background-color: rgb(108, 79, 155, 0.3);
     width: 160px;

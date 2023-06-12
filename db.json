@@ -1,0 +1,215 @@
+{
+  "message": [
+    {
+      "nome": "fernando pereira",
+      "message": "teste",
+      "id": "58a91f7d-b197-4052-a0d8-7161cde1e5fb"
+    },
+    {
+      "nome": "Paulo Vieira",
+      "message": "eai de boa ",
+      "id": "c9d045ef-7360-422c-b385-b8098678ad8a"
+    }
+  ],
+  "users": [
+    {
+      "email": "fernando.mkv@gmail.com",
+      "senha": "123456",
+      "id": "b4a27f4c-619b-4b79-98fe-57dd330bcd5c"
+    },
+    {
+      "email": "teste@teste.com",
+      "senha": "546456",
+      "id": "f85c6b3a-8fac-451e-bfbd-8408fbe3b24c"
+    },
+    {
+      "email": "hlopes@meeta.com.br",
+      "senha": "123123",
+      "id": "e970fc85-e5e4-40d4-8fc0-a411531119d8"
+    },
+    {
+      "email": "hlopes@meeta.com.br",
+      "senha": "789456",
+      "id": "1e5a1448-38cf-4789-96d1-ef2c5697d0bb"
+    },
+    {
+      "email": "fernando.mkv@gmail.com",
+      "senha": "123123",
+      "id": "83616d9e-37bb-4c80-a4b5-0b358fe0d2cd"
+    },
+    {
+      "email": "fernando.mkv@gmail.com",
+      "senha": "123456",
+      "id": "596baafc-476e-4e75-b590-4ba26f50ba6c"
+    },
+    {
+      "email": "fernando.mkv@gmail.com",
+      "senha": "123123",
+      "id": "f03cda37-4ef3-459d-b4ca-d931b21e5d2d"
+    },
+    {
+      "email": "fernando.mkv@gmail.com",
+      "senha": "123123",
+      "id": "63960cc9-d949-40ad-bcb4-f909407cd112"
+    },
+    {
+      "email": "fernando_sp_15@hotmail.com",
+      "senha": "123123",
+      "id": "bbe3e00a-7b46-41da-b08b-b9654a29d93e"
+    }
+  ],
+  "produtos": [
+    {
+      "id": 1,
+      "imagem": "/images/baby-yoda.png",
+      "nome": "Baby Yoda",
+      "preco": 99.99,
+      "secao": "starWars",
+      "descricao": "Descrição de produto meramente ilustrativa, feita apenas para propósitos de estudo. Não deve ser levada em consideração e nem ser usada em um contexto real."
+    },
+    {
+      "id": 2,
+      "imagem": "/images/action-figure-sonic.png",
+      "nome": "Action figure Sonic",
+      "preco": 99.99,
+      "secao": "diversos",
+      "descricao": "Descrição de produto meramente ilustrativa, feita apenas para propósitos de estudo. Não deve ser levada em consideração e nem ser usada em um contexto real."
+    },
+    {
+      "id": 3,
+      "imagem": "/images/camiseta-controle-retro.png",
+      "nome": "Camiseta SNES",
+      "preco": 99.99,
+      "secao": "diversos",
+      "descricao": "Descrição de produto meramente ilustrativa, feita apenas para propósitos de estudo. Não deve ser levada em consideração e nem ser usada em um contexto real."
+    },
+    {
+      "id": 4,
+      "imagem": "/images/cara-de-capuz-do-imperio.png",
+      "nome": "Darth Sidious",
+      "preco": 99.99,
+      "secao": "starWars",
+      "descricao": "Descrição de produto meramente ilustrativa, feita apenas para propósitos de estudo. Não deve ser levada em consideração e nem ser usada em um contexto real."
+    },
+    {
+      "id": 5,
+      "imagem": "/images/controle-switch.png",
+      "nome": "Controle Nintendo Switch",
+      "preco": 99.99,
+      "secao": "consoles",
+      "descricao": "Descrição de produto meramente ilustrativa, feita apenas para propósitos de estudo. Não deve ser levada em consideração e nem ser usada em um contexto real."
+    },
+    {
+      "id": 6,
+      "imagem": "/images/despertador-rosa.png",
+      "nome": "Radio relógio retro (rosa)",
+      "preco": 99.99,
+      "secao": "diversos",
+      "descricao": "Descrição de produto meramente ilustrativa, feita apenas para propósitos de estudo. Não deve ser levada em consideração e nem ser usada em um contexto real."
+    },
+    {
+      "id": 7,
+      "imagem": "/images/game-boy.png",
+      "nome": "Nintendo Game-boy",
+      "preco": 99.99,
+      "secao": "consoles",
+      "descricao": "Descrição de produto meramente ilustrativa, feita apenas para propósitos de estudo. Não deve ser levada em consideração e nem ser usada em um contexto real."
+    },
+    {
+      "id": 8,
+      "imagem": "/images/mestre-yoda.png",
+      "nome": "Mestre Yoda",
+      "preco": 99.99,
+      "secao": "starWars",
+      "descricao": "Descrição de produto meramente ilustrativa, feita apenas para propósitos de estudo. Não deve ser levada em consideração e nem ser usada em um contexto real."
+    },
+    {
+      "id": 9,
+      "imagem": "/images/mini-darth-vader.png",
+      "nome": "Darth Vader (miniatura)",
+      "preco": 99.99,
+      "secao": "starWars",
+      "descricao": "Descrição de produto meramente ilustrativa, feita apenas para propósitos de estudo. Não deve ser levada em consideração e nem ser usada em um contexto real."
+    },
+    {
+      "id": 10,
+      "imagem": "/images/oculos-vr.png",
+      "nome": "Oculos VR",
+      "preco": 99.99,
+      "secao": "diversos",
+      "descricao": "Descrição de produto meramente ilustrativa, feita apenas para propósitos de estudo. Não deve ser levada em consideração e nem ser usada em um contexto real."
+    },
+    {
+      "id": 11,
+      "imagem": "/images/pikachu-pelucia.png",
+      "nome": "Urso de pelúcia Pikachu",
+      "preco": 99.99,
+      "secao": "diversos",
+      "descricao": "Descrição de produto meramente ilustrativa, feita apenas para propósitos de estudo. Não deve ser levada em consideração e nem ser usada em um contexto real."
+    },
+    {
+      "id": 12,
+      "imagem": "/images/playstation-5.png",
+      "nome": "Playstation 5",
+      "preco": 99.99,
+      "secao": "consoles",
+      "descricao": "Descrição de produto meramente ilustrativa, feita apenas para propósitos de estudo. Não deve ser levada em consideração e nem ser usada em um contexto real."
+    },
+    {
+      "id": 13,
+      "imagem": "/images/stormtrooper-corpo.png",
+      "nome": "Stormtrooper",
+      "preco": 99.99,
+      "secao": "starWars",
+      "descricao": "Descrição de produto meramente ilustrativa, feita apenas para propósitos de estudo. Não deve ser levada em consideração e nem ser usada em um contexto real."
+    },
+    {
+      "id": 14,
+      "imagem": "/images/stormtropper-cabeca.png",
+      "nome": "Stormtrooper (cabeça)",
+      "preco": 99.99,
+      "secao": "starWars",
+      "descricao": "Descrição de produto meramente ilustrativa, feita apenas para propósitos de estudo. Não deve ser levada em consideração e nem ser usada em um contexto real."
+    },
+    {
+      "id": 15,
+      "imagem": "/images/super-nintendo-famicon.png",
+      "nome": "Super Nintendo Famicon",
+      "preco": 99.99,
+      "secao": "consoles",
+      "descricao": "Descrição de produto meramente ilustrativa, feita apenas para propósitos de estudo. Não deve ser levada em consideração e nem ser usada em um contexto real."
+    },
+    {
+      "id": 16,
+      "imagem": "/images/toalha-atari.png",
+      "nome": "Toalha Atari",
+      "preco": 99.99,
+      "secao": "diversos",
+      "descricao": "Descrição de produto meramente ilustrativa, feita apenas para propósitos de estudo. Não deve ser levada em consideração e nem ser usada em um contexto real."
+    },
+    {
+      "id": 17,
+      "imagem": "/images/xbox-controle.png",
+      "nome": "Controle Xbox Series X/S",
+      "preco": 99.99,
+      "secao": "consoles",
+      "descricao": "Descrição de produto meramente ilustrativa, feita apenas para propósitos de estudo. Não deve ser levada em consideração e nem ser usada em um contexto real."
+    },
+    {
+      "id": 18,
+      "imagem": "/images/xbox-series-x.png",
+      "nome": "Xbox Series X",
+      "preco": 99.99,
+      "secao": "consoles",
+      "descricao": "Descrição de produto meramente ilustrativa, feita apenas para propósitos de estudo. Não deve ser levada em consideração e nem ser usada em um contexto real."
+    },
+    {
+      "id": "d6408807-aa98-4fae-86ca-ae846009063c",
+      "imagem": "/images/action-figure-2b.jpg",
+      "nome": "Action-figure 2B",
+      "preco": 1222.50,
+      "secao": "diversos",
+      "descricao": "Um modelo personalizado do Android de classe batalhe tipo b, conhecida como 2B."
+    }
+  ]
+}

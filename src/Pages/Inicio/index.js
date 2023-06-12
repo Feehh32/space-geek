@@ -15,9 +15,9 @@ function Inicio() {
 		<main>
 			<Banner handleClick={handleClick}/>
 			<section className={styles.sessoes}>
-				<ProdutosSecao titulo="Star wars" nomeSessao="starWars"/>
-				<ProdutosSecao ref={ref} titulo="Consoles" nomeSessao="consoles" />
-				<ProdutosSecao titulo="Diversos" nomeSessao="diversos"/>
+				<ProdutosSecao titulo="Star wars" nomeSessao="starWars" url="/todos_os_produtos" />
+				<ProdutosSecao ref={ref} titulo="Consoles" nomeSessao="consoles" url="/todos_os_produtos" />
+				<ProdutosSecao titulo="Diversos" nomeSessao="diversos" url="/todos_os_produtos" />
 			</section>
 		</main>
 	)

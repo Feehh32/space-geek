@@ -1,0 +1,25 @@
+.containerVazio {
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    padding: 5rem 2rem;
+    text-align: center;
+}
+
+.containerVazio p {
+    line-height: 22.5px;
+}
+
+.containerCheio {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 1rem;
+    gap: 1rem;
+}
+
+@media screen and (min-width: 1440px) {
+    .containerCheio {
+        padding: 0 4rem 2rem 4rem;
+        justify-content: flex-start;
+    }
+}

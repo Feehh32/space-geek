@@ -18,16 +18,19 @@
     font-weight: 700;
 }
 
-.errorLogin {
-    border: 3px solid var(--msg-erro);
+.containerMessage {
+    display: flex;
     padding: .5rem;
-    background-color: #e0a5a5;
+    border: 3px solid #198819;
+    align-items: center;
+    justify-content: center;
     margin-bottom: 1rem;
     border-radius: 5px;
+    background-color: #b5e7b5;
 }
 
-.errorLogin p {
-    color: var(--msg-erro);
+.msgConfirmed {
+    color: #198819;
     font-weight: 700;
 }
 
@@ -39,24 +42,11 @@
     padding-top: 5px;
 }
 
-.msgCadastro {
-    font-size: .75rem;
-    color: var(--cor-da-fonte);
-    text-align: start;
-}
-
-.msgLink {
-    font-weight: 700;
-    color: var(--azul);
-}
-
 @media screen and (min-width: 1024px){
     .container{
-        padding:45px 247px 61px 246px ;
+        padding:45px 247px 61px 246px;
     }
-    .msgCadastro {
-        text-align: center;
-    }
+  
 }
 
 @media screen and (min-width: 1440px){

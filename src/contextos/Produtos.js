@@ -5,6 +5,7 @@ ProdutosContext.displayName = "Produtos";
 
 export default function ProdutosProvider({ children, url }) {
     const [produtos, setProdutos] = useState([]);
+    const [resultados, setResultados] = useState([]);
 
     useEffect(() => {
         const listarProdutos = async () => {
@@ -26,9 +27,28 @@ export default function ProdutosProvider({ children, url }) {
 
     },[produtos.length, url])
 
+    function buscarProdutos (lowerBusca) {
+        const mensagem = [{msg: 'Não foi encontrado nenhum resultado referente a sua busca. Tente novamente com outros termos'}];
+
+        if(lowerBusca === ''){
+            setResultados([])
+            return;
+        } 
+        const resultadosBusca = produtos.filter((produto) => produto.nome.toLowerCase().includes(lowerBusca));
+
+        if(resultadosBusca.length > 0){
+            setResultados(resultadosBusca);
+            return;
+        }
+
+        setResultados(mensagem);
+    }
+
     return (
-        <ProdutosContext.Provider value={{ produtos}}>
+        <ProdutosContext.Provider value={{ produtos, resultados, buscarProdutos }}>
             {children}
         </ProdutosContext.Provider>
     )
 }
+
+

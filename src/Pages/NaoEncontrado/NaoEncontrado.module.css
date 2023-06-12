@@ -1,0 +1,61 @@
+.backround {
+    background: linear-gradient(to left, #b494e6fe, #9198e5);
+    padding: 2rem;
+}
+
+.container {
+    background-color: var(--cor-da-fonte);
+    padding: 0 0 3rem 0;
+    flex-direction: column;
+    gap: 1rem;
+    text-align: center;
+}
+
+.container .codeError {
+    font-size: 8rem;
+    background-image: linear-gradient(to left, #b494e6fe, #9198e5);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: black;
+    font-family:monospace;
+}
+
+.container h3 {
+    font-size: 2rem;
+    color: var(--cor-do-subtitulo);
+    text-shadow: 3px 3px 6px #212020;
+    padding-bottom: 1rem;
+}
+
+.container p {
+    font-size: 1rem;
+    color: #212020;
+}
+
+@media screen and (min-width: 1024px) {
+    .backround {
+        padding: 3rem 10rem;
+    }
+
+  
+
+    .container h3 {
+        font-size: 2.5rem;
+    }
+
+    .container p {
+        font-size: 1.5rem;
+        color: #212020;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .backround {
+        padding: 3rem 18rem;
+    }
+
+    .container .codeError {
+        font-size: 16rem;
+    }
+}
