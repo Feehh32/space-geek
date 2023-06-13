@@ -62,6 +62,7 @@ function LoginCadastro() {
 
     const onSubmit = async (data) => {
         if (data !== null) {
+            
             const response = await axios.post('http://localhost:8000/users', {
                 email: data.email,
                 senha: data.senha,

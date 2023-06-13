@@ -19,4 +19,6 @@ body {
     background-color: var(--cor-de-fundo);
     color: var(--cor-da-fonte);
     font-family: var(--fonte-principal);
+    width: 100%;
+    height: 100vh;
 }

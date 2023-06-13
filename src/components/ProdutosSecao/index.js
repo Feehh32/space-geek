@@ -45,7 +45,7 @@ function ProdutosSecao({ titulo, url, nomeSessao }, ref) {
                         ))
                     :
                     produtos.filter((produto) => produto.secao === nomeSessao)
-                        .slice(2)
+                        .slice(0 , 4)
                         .map((produto) => (
                             <CardProduto
                                 imagem={produto.imagem}

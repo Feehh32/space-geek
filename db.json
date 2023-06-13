@@ -13,49 +13,9 @@
   ],
   "users": [
     {
-      "email": "fernando.mkv@gmail.com",
+      "email": "email@email.com",
       "senha": "123456",
-      "id": "b4a27f4c-619b-4b79-98fe-57dd330bcd5c"
-    },
-    {
-      "email": "teste@teste.com",
-      "senha": "546456",
-      "id": "f85c6b3a-8fac-451e-bfbd-8408fbe3b24c"
-    },
-    {
-      "email": "hlopes@meeta.com.br",
-      "senha": "123123",
-      "id": "e970fc85-e5e4-40d4-8fc0-a411531119d8"
-    },
-    {
-      "email": "hlopes@meeta.com.br",
-      "senha": "789456",
-      "id": "1e5a1448-38cf-4789-96d1-ef2c5697d0bb"
-    },
-    {
-      "email": "fernando.mkv@gmail.com",
-      "senha": "123123",
-      "id": "83616d9e-37bb-4c80-a4b5-0b358fe0d2cd"
-    },
-    {
-      "email": "fernando.mkv@gmail.com",
-      "senha": "123456",
-      "id": "596baafc-476e-4e75-b590-4ba26f50ba6c"
-    },
-    {
-      "email": "fernando.mkv@gmail.com",
-      "senha": "123123",
-      "id": "f03cda37-4ef3-459d-b4ca-d931b21e5d2d"
-    },
-    {
-      "email": "fernando.mkv@gmail.com",
-      "senha": "123123",
-      "id": "63960cc9-d949-40ad-bcb4-f909407cd112"
-    },
-    {
-      "email": "fernando_sp_15@hotmail.com",
-      "senha": "123123",
-      "id": "bbe3e00a-7b46-41da-b08b-b9654a29d93e"
+      "id": "10a8b28c-ffb1-461a-9e18-60b05681547b"
     }
   ],
   "produtos": [
@@ -210,6 +170,22 @@
       "preco": 975.9,
       "secao": "diversos",
       "descricao": "YoRHa No. 2 Tipo B, também conhecido como 2B, do NieR:Automata.\nAs texturas do cabelo e das roupas da 2B exalam uma sensação de luxo. Cada detalhe fino e proporção foram recriados com cuidado e fidelidade ao criar esta obra-prima."
+    },
+    {
+      "id": "77dfdd93-fd9d-4588-8c17-533a6e871c2c",
+      "imagem": "/images/skin-xbox-sw.jpg",
+      "nome": "Skin adesiva (Xbox series S/X)",
+      "preco": 29.5,
+      "secao": "consoles",
+      "descricao": "Skin para consoles da linha Xbox Series S/X"
+    },
+    {
+      "id": "ce0bcba1-1489-40a5-a41c-6ccd7ad597f9",
+      "imagem": "/images/star-wars-fo.png",
+      "nome": "Star Wars Fallen Order (PS5)",
+      "preco": 200,
+      "secao": "starWars",
+      "descricao": "Star Wars Jedi Fallen Order: É um jogo que se passa após os eventos do episódio III, quando a Ordem Jedi foi aniquilada pela Ordem 66. Controle Cal Kestis, um jovem Padawan Jedi, que precisa juntar as partes do seu passado despedaçado para completar seu treinamento, desenvolver novas e poderosas habilidades de força e dominar por completo seu sabre de luz durante suas batalhas."
     }
   ]
 }

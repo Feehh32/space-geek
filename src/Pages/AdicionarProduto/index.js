@@ -23,7 +23,7 @@ const schema = yup.object({
         .matches(/^\d+(,\d{1,2})?$/, 'O valor digitado dever estar no formato: numero, virgula, numero (00,00).'),
     descricao: yup.string()
         .required("O campo de descrição não pode estar vazio.")
-        .max(250, 'O campo de descrição deve ter o máximo de 250 caracteres.')
+        .max(500, 'O campo de descrição deve ter o máximo de 500 caracteres.')
 })
 
 function AdicionarProduto() {
@@ -59,6 +59,7 @@ function AdicionarProduto() {
             .then((response)=> {
                 setProdutoCadastrado(true);
                  reset();
+                 setSelectedOption('')
             })
             .catch(error => console.error("erro na requisição", error))
             
