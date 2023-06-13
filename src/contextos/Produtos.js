@@ -25,18 +25,18 @@ export default function ProdutosProvider({ children, url }) {
 
         listarProdutos();
 
-    },[produtos.length, url])
+    }, [produtos.length, url])
 
-    function buscarProdutos (lowerBusca) {
-        const mensagem = [{msg: 'Não foi encontrado nenhum resultado referente a sua busca. Tente novamente com outros termos'}];
+    function buscarProdutos(lowerBusca) {
+        const mensagem = [{ msg: 'Não foi encontrado nenhum resultado referente a sua busca. Tente novamente com outros termos' }];
 
-        if(lowerBusca === ''){
+        if (lowerBusca === '') {
             setResultados([])
             return;
-        } 
+        }
         const resultadosBusca = produtos.filter((produto) => produto.nome.toLowerCase().includes(lowerBusca));
 
-        if(resultadosBusca.length > 0){
+        if (resultadosBusca.length > 0) {
             setResultados(resultadosBusca);
             return;
         }
@@ -44,8 +44,27 @@ export default function ProdutosProvider({ children, url }) {
         setResultados(mensagem);
     }
 
+    async function deletarProdutos(productId) {
+        try {
+            const response = await fetch(`http://localhost:8000/produtos/${productId}`, {
+                method: 'DELETE',
+            })
+
+            if (!response.ok) {
+                throw new Error("Erro ao excluir o produto.");
+            }
+
+            const listaAtualizada = produtos.filter((produto) => produto.id !== productId)
+            setProdutos(listaAtualizada);
+
+        } catch (error) {
+            console.error('Erro ao excluir o produto:', error);
+        }
+
+    }
+
     return (
-        <ProdutosContext.Provider value={{ produtos, resultados, buscarProdutos }}>
+        <ProdutosContext.Provider value={{ produtos, resultados, buscarProdutos, deletarProdutos }}>
             {children}
         </ProdutosContext.Provider>
     )

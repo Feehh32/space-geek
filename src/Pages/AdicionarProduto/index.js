@@ -15,7 +15,7 @@ const schema = yup.object({
         .required('O campo de imagem não pode estar vazio.'),
     nome: yup.string()
         .required('O campo de nome não pode estar vazio.')
-        .max(20, 'O campo de nome deve ter no máximo 20 caracteres.'),
+        .max(40, 'O campo de nome deve ter no máximo 40 caracteres.'),
     secao: yup.string()
         .required('O campo de seção não pode estar vazio.'),
     preco: yup.string()

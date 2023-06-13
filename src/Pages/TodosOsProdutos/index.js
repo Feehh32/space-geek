@@ -3,9 +3,11 @@ import styles from './TodosOsProdutos.module.css'
 import Botao from 'components/Botao';
 import CardProduto from 'components/CardProduto';
 import { ProdutosContext } from 'contextos/Produtos';
+import Excluir from 'components/Excluir';
 
 function TodosOsProdutos() {
-    const {produtos} = useContext(ProdutosContext);
+    const { produtos } = useContext(ProdutosContext);
+
     return (
         <main className={styles.container}>
             <div className={styles.containerCabecalho}>
@@ -16,13 +18,15 @@ function TodosOsProdutos() {
             </div>
             <div className={styles.containerProdutos}>
                 {produtos.map((produto) => (
-                    <CardProduto
-                        imagem={produto.imagem}
-                        key={produto.id}
-                        nomeProduto={produto.nome}
-                        preco={produto.preco.toFixed(2)}
-                        id={`#${produto.id}`}
-                    />
+                    <div key={produto.id} className={styles.containerCard}>
+                        <Excluir productId={produto.id}/>
+                        <CardProduto
+                            imagem={produto.imagem}
+                            nomeProduto={produto.nome}
+                            preco={produto.preco}
+                            id={`#${produto.id}`}
+                        />
+                    </div>
                 ))}
             </div>
         </main>

@@ -1,0 +1,8 @@
+.iconTrash {
+    position: absolute;
+    opacity: .7;
+    font-size: 1.5rem;
+    cursor: pointer;
+    right: 5%;
+    top: 3%;
+}
