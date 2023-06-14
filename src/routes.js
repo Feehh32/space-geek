@@ -13,7 +13,7 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 function AppRoutes() {
 	return (
 		<BrowserRouter>
-			<ProdutosProvider url="http://localhost:8000/produtos">
+			<ProdutosProvider url="https://my-json-server.typicode.com/Feehh32/space-geek-api/produtos">
 					<Routes>
 						<Route path="/" element={<PaginaBase />}>
 							<Route index element={<Inicio />}></Route>
