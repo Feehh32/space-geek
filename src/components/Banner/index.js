@@ -1,5 +1,5 @@
 import styles from './Banner.module.css';
-import bannerImagem from './banner-imagem.png';
+import bannerImagem from './new_banner.png';
 import BotaoSubmit from 'components/BotaoSubmit';
 
 function Banner({handleClick}) {

@@ -1,4 +1,4 @@
-<img src="./imagem_readme.png" alt="Banner com a logo do Space Geek">
+<img src="./public/images/new_banner.png" alt="Banner com a logo do Space Geek">
 <br></br>
 
 ![Status](https://img.shields.io/badge/status-complete-green)
@@ -75,7 +75,9 @@ $ npm install
 
 $ npm run json-server  
 
- # O servidor será aberta na porta:8000 - acesse http://localhost:8000  
+ # O servidor será aberto na porta:8000 - acesse http://localhost:8000. 
+ # Note que ele  criará um arquivo chamado db.json, caso não seja o servidor com os itens da aplicação, apague o que estiver dentro, 
+ # Em seguida copie o que está no arquivo servidor.txt e cole no arquivo db.json
 
  # Rode agora a aplicação em modo de desenvolvimento 
 
@@ -106,11 +108,13 @@ No momento o projeto está utilizando uma api fake criada no json placeholder, s
 ```
 <br/>   
 
-<h2 style="color:#f9f9f9;">📝 Licença </h2>   
+<h1 style="color:#f9f9f9;">📝 Licença </h1>   
 
 <p style="color:#f9f9f9; font-size:16px;">Este projeto esta sobe a licença MIT.</p>
 
-<br/>  
+<p style="color:#f9f9f9; font-size:16px">
+Você pode vizualizar o projeto online <a href="https://www.linkedin.com/in/fernando-pereira-710448247/">Aqui</a>
+</p>
 
 <p style="color:#f9f9f9; font-size:16px">
 Feito com ❤️ por Fernando Pereira <a href="https://www.linkedin.com/in/fernando-pereira-710448247/">👋🏽 Entre em contato!</a>

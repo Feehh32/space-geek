@@ -2,7 +2,7 @@ import BarraPesquisa from 'components/BarraPesquisa'
 import Logo from 'components/Logo'
 import styles from './Cabecalho.module.css'
 import Botao from 'components/Botao'
-import { useLocation, useNavigate, useParams } from 'react-router-dom'
+import { useLocation, useNavigate} from 'react-router-dom'
 import { useContext, useState } from 'react'
 import { ProdutosContext } from 'contextos/Produtos'
 import UserInfo from 'components/UserInfo'
@@ -11,7 +11,6 @@ import { AuthContext } from 'contextos/AuthContext'
 function Cabecalho() {
 	const mdScreen = window.innerWidth < 1080;
 	const location = useLocation();
-	const parametros = useParams();
 	const [busca, setBusca] = useState('')
 	const { buscarProdutos } = useContext(ProdutosContext);
 	const navigate = useNavigate();
