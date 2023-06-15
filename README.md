@@ -113,7 +113,7 @@ No momento o projeto está utilizando uma api fake criada no json placeholder, s
 <p style="color:#f9f9f9; font-size:16px;">Este projeto esta sobe a licença MIT.</p>
 
 <p style="color:#f9f9f9; font-size:16px">
-Você pode vizualizar o projeto online <a href="https://www.linkedin.com/in/fernando-pereira-710448247/">Aqui</a>
+Você pode vizualizar o projeto online <a href="https://space-geek-5y0ww46rh-feehh32.vercel.app/">Aqui</a>
 </p>
 
 <p style="color:#f9f9f9; font-size:16px">
